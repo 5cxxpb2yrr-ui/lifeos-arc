@@ -1,4 +1,4 @@
-import { supabase } from '@/lib/supabase/client'
+import { api } from "../services/api";
 import type { Event, Person, Asset, Stream, OpenLoop, Goal, Decision, Insight } from '@/types'
 
 // Events Service
