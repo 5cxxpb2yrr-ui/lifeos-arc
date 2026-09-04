@@ -1,5 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
-import * as api from './api'
+// Change relative import target to project global layout paths
+import { api } from "@/services"; 
 
 // Events Hooks
 export const useEvents = (userId: string) => {
