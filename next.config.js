@@ -1,16 +1,14 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  typescript: {
-    tsconfigPath: './tsconfig.json'
-  },
   webpack: (config) => {
-    config.watchOptions = {
-      poll: 1000,
-      aggregateTimeout: 300
-    }
-    return config
-  }
-}
+    config.resolve.alias['@'] = path.resolve(__dirname, './src');
+    return config;
+  },
+};
+
+module.exports = nextConfig;
+
 
 module.exports = nextConfig
