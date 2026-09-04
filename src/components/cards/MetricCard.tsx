@@ -1,6 +1,5 @@
 import React from 'react'
-import Card from './Card'
-
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 export interface MetricCardProps {
   label: string
   value: number | string
