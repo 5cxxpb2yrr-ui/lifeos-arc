@@ -1,4 +1,5 @@
 const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config) => {
@@ -7,6 +8,4 @@ const nextConfig = {
   },
 };
 
-export default tailwindcss(nextConfig);
-
-
+module.exports = nextConfig;
